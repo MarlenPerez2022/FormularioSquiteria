@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Squitería</title>
+</head>
+<body>
+    <h1>Squiteria</h1>
+    <form action="#" method="post">
+        <label for="nombre">Cliente:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="telefono">Telefono:</label><br>
+        <input type="text" id="telefono" name="telefono" required><br><br>
+
+        <label for="tamañoesquite">Tamaño esquite</label><br>
+        <select id="tamañoesquite" name="tamañoesquite" required>
+            <option value="tamañogrande">Grande</option>
+            <option value="tamañomediano">Mediano</option>
+            <option value="tamañopequeño">Pequeño</option>
+        
+        </select><br><br>
+
+        <label for="tipoesquite">Tipo esquite</label><br>
+        <select id="tipoesquite" name="tipoesquite" required>
+            <option value="tiponormal">Normal</option>
+            <option value="tipotostiesquite">Tostiesquite</option>
+            <option value="tipodoriesquite">Doriesquite</option>
+        
+        </select><br><br>
+
+        <label for="chapulines">Con chapulines?</label><br>
+
+        <label for="siA">Si</label>
+        <input type="radio" id="siA" name="opcionesA">
+        <label for="noA">No</label>
+        <input type="radio" id="noA" name="opcionesA">
+        <br>
+
+        <label for="telefono">Patas de pollo?</label><br>
+        <label for="siB">Si</label>
+        <input type="radio" id="siB" name="opcionesB">
+        <label for="noB">No</label>
+         <input type="radio" id="noB" name="opcionesB">
+        <br>
+
+        <label for="picante">Nivel de Picante:</label><br>
+        <input type="range" id="picante" name="picante" min="1" max="10" value="5" step="1" oninput="this.nextElementSibling.value = this.value">
+        <output>5</output><br><br>
+
+        <label>Ingredientes:</label><br>
+        <input type="checkbox" id="mayonesa" name="ingredientes" value="mayonesa">
+        <label for="mayonesa">Mayonesa</label><br>
+        <input type="checkbox" id="aguacate" name="ingredientes" value="aguacate">
+        <label for="aguacate">Aguacate</label><br>
+        <input type="checkbox" id="queso" name="ingredientes" value="queso">
+        <label for="queso">Queso</label><br>
+        <input type="checkbox" id="sal" name="ingredientes" value="sal">
+        <label for="sal">Sal</label><br><br>
+
+        
+        <input type="submit" value="Cancelar">
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
